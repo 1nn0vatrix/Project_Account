@@ -15,5 +15,10 @@ public class Knight extends ChessPiece {
 	{
 		return true;
 	}
+	
+	public String toString()
+	{
+		return "N";
+	}
 
 }

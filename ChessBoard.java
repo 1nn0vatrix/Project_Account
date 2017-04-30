@@ -1,3 +1,4 @@
+
 public class ChessBoard {
 
 	private ChessPiece[][] board = new ChessPiece[8][8];
@@ -70,12 +71,12 @@ public class ChessBoard {
 
 	}
 
-	public String printBoard()
+	public void printBoard()
 	{
-		for(int i = 0; i<ChessBoard.length; i++)
+		for(int i = 0; i<8; i++)
 		{
 			System.out.println("| ");
-			for(int j = 0 ; j<ChessBoard.length; j++)
+			for(int j = 0 ; j<8; j++)
 			{
 				
 			}

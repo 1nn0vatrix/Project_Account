@@ -8,12 +8,33 @@ public class Bishop extends ChessPiece {
 	@Override
 	public void Move(String mv)
 	{
+		if(parseMove(mv)==true)
+		{
+			System.out.println("The move is Valid!");
+		}
+		else
+		{
+			System.out.println("The move is Invalid.");
+		}
 		
 	}
 	@Override
-	public boolean parseMove(String src, String destination, ChessBoard[][]b)
+	public boolean parseMove(String mv)
 	{
+		if(mv.length()!=4)
+		{
+			return false;
+		}
+		else
+		{
+			
+		}
+		
 		return true;
+	}
+	public String toString()
+	{
+		return "B";
 	}
 
 }

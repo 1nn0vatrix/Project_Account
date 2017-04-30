@@ -1,9 +1,11 @@
 
 public class King extends ChessPiece {
+	
 
 	public King(Color c) {
 		super(c);
-		// TODO Auto-generated constructor stub
+		
+		
 	}
 	@Override
 	public void Move(String mv)
@@ -11,8 +13,18 @@ public class King extends ChessPiece {
 		
 	}
 	@Override
-	public boolean parseMove(String src, String destination, ChessBoard[][]b)
+	public boolean parseMove(String mv)
 	{
+		
 		return true;
 	}
+	
+	public String toString()
+	{
+		if(Color.black!=null)
+		{return "K";}
+		else
+			return "k";
+	}
+	
 }

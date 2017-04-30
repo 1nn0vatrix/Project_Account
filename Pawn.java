@@ -13,10 +13,14 @@ public class Pawn extends ChessPiece {
 		
 	}
 	@Override
-	public boolean parseMove(String src, String dest, ChessBoard[][] b)
+	public boolean parseMove(String mv)
 	{
 		
 		return true;
+	}
+	public String toString()
+	{
+		return "P";
 	}
 
 }
